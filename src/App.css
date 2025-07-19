@@ -1,0 +1,25 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: light --default;
+}
+
+@font-face {
+  font-family: "outlit";
+  src: url("./assets/fonts/Outfit/Outfit-VariableFont_wght.ttf")
+    format("truetype");
+  font-style: normal;
+}
+
+body {
+  font-family: "outlit", sans-serif;
+}
+
+@theme {
+  /* Custom CSS Variables */
+  --color-dark-red: #561C24;
+  --color-light-red: #6D2932;
+  --color-dark-beige: #C7B7A3;
+  --color-light-beige: #E8D8C4;
+  --color-lightest-beige: #F3EDE5;
+  --color-darkest-beige: #B2A28F;
+}
