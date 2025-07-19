@@ -4,8 +4,6 @@
 [![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://react.dev/)
 [![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)](https://firebase.google.com/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
-[![GitHub Stars](https://img.shields.io/github/stars/[YOUR_GITHUB_USERNAME]/[YOUR_REPO_NAME]?style=social)](https://github.com/[YOUR_GITHUB_USERNAME]/[YOUR_REPO_NAME]/stargazers)
-[![GitHub Forks](https://img.shields.io/github/forks/[YOUR_GITHUB_USERNAME]/[YOUR_REPO_NAME]?style=social)](https://github.com/[YOUR_GITHUB_USERNAME]/[YOUR_REPO_NAME]/network/members)
 
 ---
 
