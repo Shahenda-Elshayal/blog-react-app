@@ -2,7 +2,6 @@ import { NavLink, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Auth from "./pages/Auth";
-import PostCard from "./components/PostCard";
 import AddNewPost from "./components/AddNewPost";
 import { useContext } from "react";
 import { AuthContext } from "./context/AuthContext";
@@ -28,10 +27,10 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/auth" element={<Auth />} />
-          <Route path="/add-post" element={<AddNewPost />} />{" "}
           {/* For adding new post */}
-          <Route path="/add-post/:postId" element={<AddNewPost />} />{" "}
+          <Route path="/add-post" element={<AddNewPost />} />{" "}
           {/* For editing existing post */}
+          <Route path="/add-post/:postId" element={<AddNewPost />} />{" "}
         </Routes>
       </div>
     </>

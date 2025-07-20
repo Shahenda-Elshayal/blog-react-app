@@ -7,7 +7,7 @@ import {
   updateDoc,
   arrayUnion,
   arrayRemove,
-} from "firebase/firestore"; // ✅ Import updateDoc, arrayUnion, arrayRemove
+} from "firebase/firestore";
 import ConfirmationModal from "./ConfirmationModal";
 import { useNavigate } from "react-router-dom";
 
@@ -18,10 +18,8 @@ export default function PostCard({ post }) {
 
   const [showConfirmModal, setShowConfirmModal] = useState(false);
 
-  // ✅ Determine if the current user has liked this post
-  // post.likes is expected to be an array of user UIDs
   const hasLiked = user && post.likes && post.likes.includes(user.uid);
-  const likeCount = post.likes ? post.likes.length : 0; // Get the number of likes
+  const likeCount = post.likes ? post.likes.length : 0;
 
   const handleDeleteClick = () => {
     setShowConfirmModal(true);
@@ -47,7 +45,6 @@ export default function PostCard({ post }) {
     navigate(`/add-post/${post.id}`);
   };
 
-  // ✅ New function to toggle like status
   const handleLikeToggle = async () => {
     if (!user) {
       alert("You must be logged in to like a post.");
@@ -57,13 +54,11 @@ export default function PostCard({ post }) {
     const postRef = doc(db, "posts", post.id);
     try {
       if (hasLiked) {
-        // If already liked, remove user's UID from the likes array
         await updateDoc(postRef, {
           likes: arrayRemove(user.uid),
         });
         console.log("Post unliked!");
       } else {
-        // If not liked, add user's UID to the likes array
         await updateDoc(postRef, {
           likes: arrayUnion(user.uid),
         });
@@ -128,7 +123,7 @@ export default function PostCard({ post }) {
           />
         )}
 
-        {/* ✅ Like button and count */}
+        {/* Like button and count */}
         <div className="flex items-center gap-2 mt-4">
           <button
             onClick={handleLikeToggle}
