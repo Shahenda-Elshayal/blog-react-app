@@ -56,7 +56,7 @@ EchoNest is built with a powerful and modern technology stack:
     * [**Yup**](https://github.com/jquense/yup): A JavaScript schema builder for value parsing and validation.
 * **Styling:**
     * [**Tailwind CSS**](https://tailwindcss.com/): A utility-first CSS framework for rapidly building custom designs.
-    * [**DaisyUI (implied by `input input-bordered`, `btn`)**](https://daisyui.com/): A Tailwind CSS component library that might be used for UI elements.
+    * [**DaisyUI **](https://daisyui.com/): A Tailwind CSS component library that might be used for UI elements.
 * **Other:**
     * **ESLint / Prettier:** For code quality and formatting.
 
